@@ -1,0 +1,60 @@
+body{
+    font-family: 'Source Sans Pro', 'Arial', sans-serif;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+.fieldset-borda{
+    border: #054077 solid 2.5px;
+    border-radius: 5px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: 25px;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+    border:#054077 solid
+}
+div{
+    padding-bottom: 5px;
+}
+
+#nome, #email, #sitio_eletro, #nascimento, #sexo{ 
+     
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+.formacao-estudante{
+    padding-right: 10px;
+}
+textarea{
+    resize: none;
+}
+.espaco-texto{
+    padding-top: 15px;
+}
+
+
+
+.button-enviar{
+    border:#054077 solid 3px;
+    padding: 7px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .5s;
+    font-size: 17px;
+}
+
+.button-enviar:hover{
+    background-color:#81a4c5;
+}

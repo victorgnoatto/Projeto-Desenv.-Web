@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/normalize.css">
+        <link rel="stylesheet" href="./CSS/estilo_form.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form method="post">
+			<fieldset class="fieldset-borda">
+				<legend>Formulário de contato</legend>
+				
+                <div>
+                    <label class="contat_label" for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required/>
+                </div>
+                
+                <div>    
+                    <label class="contat_label" for="email">Email</label>
+                    <input id="email" name="email" type="email" required/>
+                </div>
+                <div>
+                    <label class="contat_label" for="sitio_eletro">Sitio Eletronico</label>
+                    <input id="sitio_eletro" name="sitio_eletro" type="url" required>
+                </div>
+                <div>
+                    <label class="contat_label" for="nascimento">Data de nascimento</label>
+                    <input id="nascimento" name="nascimento" type="date" required/>
+                </div>
+                <div>
+                    <label class="contat_label" for="sexo">Sexo</label>
+                    <select name="sexo" id="sexo" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="nao_informar">Não informar</option>
+                    </select>
+                </div>
+			</fieldset>
+			
+            <fieldset class="fieldset-borda" class="fieldset-arrumar-botton">
+				<legend>Dados profissionais</legend>
+                <div>
+                    <p>Você é Estudante ou Profissional:</p>
+                    <input type="radio" name="formacao" value="Estudante" id="estudante"/>
+                    <label class="formacao-estudante" for="estudante">Estudante</label>
+                    
+                    <input type="radio"	name="formacao" value="Profissinal" id="Profissinal"/>
+                    <label class="formacao-profissional" for="Profissinal">Profissional</label>
+                </div>    
+                <div>    
+                    <p>Áreas de interesse:</p>
+                    <input type="checkbox" name="area_de_interesse" value="front" id="front" />
+                    <label for="front">Front-end</label>
+                    
+                    <input type="checkbox" name="area_de_interesse" value="back" id="back" />
+                    <label for="back">Back-end</label>
+                    
+                    <input type="checkbox" name="area_de_interesse"	value="banco_de_dados" id="banco_de_dados" />
+                    <label for="banco_de_dados">Banco de Dados</label>
+                    
+                    <input type="checkbox" name="area_de_interesse" value="redes" id="redes" />
+                    <label for="redes">Redes</label>
+                </div>
+                <div class="espaco-texto">    
+                    <label for="texto" >Fale um pouco sobre você:</label>
+                    <textarea id="texto" name="texto" rows="5" cols="40" maxlength="300" minlength="20" > ...</textarea>
+                </div>
+			</fieldset>
+             
+            <div>
+			    <input type="submit" value="Enviar" class="button-enviar" />
+            </div>    
+        </form>
+    </body>
+</html>
